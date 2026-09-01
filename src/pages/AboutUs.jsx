@@ -6,6 +6,7 @@ import {
   BRAND,
   STATS,
   STORY_STEPS,
+  SITE_URL,
   VALUES,
 } from '../data/content'
 
@@ -20,6 +21,7 @@ export default function AboutUs() {
     title: `About Us | ${BRAND}`,
     description:
       'About Bright Kapitune — our story, purpose, team and the transparency and controls behind the platform.',
+    canonical: `${SITE_URL}/about-us`,
   })
 
   return (

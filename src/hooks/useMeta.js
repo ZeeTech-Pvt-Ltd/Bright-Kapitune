@@ -1,7 +1,8 @@
 import { useEffect } from 'react'
 
-// Sets the page title and meta description per route (SPA-friendly).
-export default function useMeta({ title, description }) {
+// Sets the page title, meta description and canonical link per route
+// (SPA-friendly).
+export default function useMeta({ title, description, canonical }) {
   useEffect(() => {
     if (title) document.title = title
     if (description) {
@@ -13,5 +14,18 @@ export default function useMeta({ title, description }) {
       }
       meta.setAttribute('content', description)
     }
-  }, [title, description])
+    const existing = document.querySelector('link[rel="canonical"]')
+    if (canonical) {
+      let link = existing
+      if (!link) {
+        link = document.createElement('link')
+        link.setAttribute('rel', 'canonical')
+        document.head.appendChild(link)
+      }
+      link.setAttribute('href', canonical)
+    } else {
+      // Pages without a canonical (404) clear the previous one.
+      existing?.remove()
+    }
+  }, [title, description, canonical])
 }

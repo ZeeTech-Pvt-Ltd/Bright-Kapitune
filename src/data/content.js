@@ -5,6 +5,8 @@
 
 export const BRAND = 'Bright Kapitune'
 
+export const SITE_URL = 'https://bright-kapitune-au.com'
+
 export const CONTACT_EMAIL = 'support@bright-kapitune-au.com'
 
 export const FORM_ENDPOINT = 'https://meridianc-au.com/homeMailAction.php'

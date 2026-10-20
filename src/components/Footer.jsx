@@ -2,9 +2,13 @@ import Link from 'next/link'
 import Logo from './Logo'
 import { BRAND, CONTACT_EMAIL } from '../data/content'
 
-// Mirrors the header menu (Home is covered by the logo link)
+// Mirrors the header menu plus the new content pages (Home is covered
+// by the logo link)
 const PLATFORM_LINKS = [
   { label: 'About Us', to: '/about-us' },
+  { label: 'How It Works', to: '/how-it-works' },
+  { label: 'Features', to: '/features' },
+  { label: 'Reviews', to: '/reviews' },
   { label: 'Contact Us', to: '/contact-us' },
   { label: 'FAQs', to: '/faqs' },
 ]

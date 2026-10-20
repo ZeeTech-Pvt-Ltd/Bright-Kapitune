@@ -817,6 +817,26 @@ input {
   max-width: 34ch;
 }
 
+.steps-band__points {
+  list-style: none;
+  margin-top: 18px;
+  display: grid;
+  gap: 10px;
+}
+
+.steps-band__points li {
+  display: flex;
+  align-items: center;
+  gap: 9px;
+  color: var(--on-slate-muted);
+  font-size: 14.5px;
+}
+
+.steps-band__points svg {
+  color: var(--lime);
+  flex-shrink: 0;
+}
+
 @media (max-width: 768px) {
   .steps-band__grid {
     grid-template-columns: 1fr;

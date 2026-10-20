@@ -119,14 +119,87 @@ export const STEPS = [
   {
     title: 'Sign Up',
     text: 'Create your free account in minutes - just your name, email and phone number.',
+    points: [
+      'Enter your name, email and phone number',
+      'Verify your details in moments',
+      'No registration fee - your account is free',
+    ],
   },
   {
     title: 'Deposit Funds',
     text: 'Top up with 347 A$ or more using a card, bank transfer or e-wallet.',
+    points: [
+      'Pay by card, bank transfer, e-wallet or PayPal',
+      'Start with a minimum deposit of just 347 A$',
+      'Every fee shown clearly before you confirm',
+    ],
   },
   {
     title: 'Start Trading',
     text: 'Trade BTC, SOL, USDT and more - manually or on autopilot.',
+    points: [
+      'Trade crypto, forex, shares, commodities and more',
+      'Go manual, or switch on the automated analysis engine',
+      'Track your balance and history from one dashboard',
+    ],
+  },
+]
+
+// Markets available on the platform, used by the How It Works page.
+export const MARKETS = [
+  {
+    title: 'Cryptocurrencies',
+    text: 'Trade BTC, ETH, SOL, USDT and more - manually or on autopilot, around the clock.',
+    icon: 'chip',
+  },
+  {
+    title: 'Forex',
+    text: 'Access major and minor currency pairs with clear, transparent pricing.',
+    icon: 'gauge',
+  },
+  {
+    title: 'Shares',
+    text: 'Trade shares in companies you know, all from a single account.',
+    icon: 'receipt',
+  },
+  {
+    title: 'Commodities',
+    text: 'Broaden your portfolio with energy, agriculture and industrial commodities.',
+    icon: 'bolt',
+  },
+  {
+    title: 'Precious Metals',
+    text: 'Trade gold, silver and other metals as an opportunity or a hedge.',
+    icon: 'coins',
+  },
+  {
+    title: 'CFDs',
+    text: 'Go long or short with CFDs across the markets above - risks shown upfront.',
+    icon: 'arrowRight',
+  },
+]
+
+// Funding details for the How It Works page.
+export const DEPOSIT_STEPS = [
+  {
+    title: 'Fund your account',
+    text: 'Pay your way with a card, bank transfer, e-wallet or PayPal.',
+    icon: 'coins',
+  },
+  {
+    title: 'Minimum deposit 347 A$',
+    text: 'Start small and grow at your own pace - perfect for testing the waters.',
+    icon: 'bolt',
+  },
+  {
+    title: 'Withdraw any time',
+    text: 'Request a withdrawal from your dashboard. Most are completed within 24-48 hours.',
+    icon: 'clock',
+  },
+  {
+    title: 'No hidden fees',
+    text: 'Any cost is itemised before you commit. What you see is exactly what you pay.',
+    icon: 'eye',
   },
 ]
 

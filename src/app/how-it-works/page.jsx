@@ -1,7 +1,9 @@
 import { pageMeta } from '../../lib/seo'
 import { FAQ_QUICK_CARDS } from '../../data/content'
-import Stats from '../../sections/Stats'
 import HowItWorks from '../../sections/HowItWorks'
+import Markets from '../../sections/Markets'
+import Deposits from '../../sections/Deposits'
+import Stats from '../../sections/Stats'
 import Faq from '../../sections/Faq'
 import FinalCta from '../../sections/FinalCta'
 
@@ -48,11 +50,17 @@ export default function HowItWorksPage() {
         </div>
       </section>
 
-      {/* Platform in numbers */}
-      <Stats />
+      {/* What you can trade */}
+      <Markets />
 
       {/* The three steps */}
       <HowItWorks />
+
+      {/* Deposits & withdrawals */}
+      <Deposits />
+
+      {/* Platform in numbers */}
+      <Stats />
 
       {/* Getting-started questions */}
       <Faq />

@@ -1,3 +1,4 @@
+import Icon from '../components/Icon'
 import { STEPS } from '../data/content'
 
 export default function HowItWorks() {
@@ -12,13 +13,21 @@ export default function HowItWorks() {
         </div>
 
         <div className="steps-band__grid" data-reveal-grid>
-          {STEPS.map(({ title, text }, i) => (
+          {STEPS.map(({ title, text, points }, i) => (
             <div className="steps-band__item" data-reveal key={title}>
               <span className="steps-band__num" aria-hidden="true">
                 0{i + 1}
               </span>
               <h3>{title}</h3>
               <p>{text}</p>
+              <ul className="steps-band__points">
+                {points.map((point) => (
+                  <li key={point}>
+                    <Icon name="check" size={14} strokeWidth={2.5} />
+                    {point}
+                  </li>
+                ))}
+              </ul>
             </div>
           ))}
         </div>

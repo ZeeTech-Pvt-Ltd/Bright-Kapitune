@@ -1,18 +1,11 @@
-import useMeta from '../hooks/useMeta'
-import { BRAND, CONTACT_EMAIL, SITE_URL } from '../data/content'
+import { BRAND, CONTACT_EMAIL } from '../data/content'
 
 /**
- * Shared layout for legal pages. Content is template text - have a
- * lawyer review each page before launch.
+ * Shared layout for legal pages. Metadata is set per page via
+ * `export const metadata` (see the app/legal route files). Content is
+ * template text - have a lawyer review each page before launch.
  */
-export default function LegalPage({ title, description, updated, children }) {
-  const slug = title.toLowerCase().replace(/\s+/g, '-')
-  useMeta({
-    title: `${title} - ${BRAND}`,
-    description,
-    canonical: `${SITE_URL}/${slug}`,
-  })
-
+export default function LegalPage({ title, updated, children }) {
   return (
     <main className="legal">
       <h1>

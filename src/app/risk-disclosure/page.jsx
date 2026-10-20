@@ -1,12 +1,16 @@
-import LegalPage, { LegalSection, ContactNote } from '../components/LegalPage'
+import LegalPage, { LegalSection, ContactNote } from '../../components/LegalPage'
+import { pageMeta } from '../../lib/seo'
+
+export const metadata = pageMeta({
+  title: 'Risk Disclosure - Bright Kapitune',
+  description:
+    'Bright Kapitune Risk Disclosure - trading financial markets carries substantial risk and is not suitable for every investor.',
+  path: '/risk-disclosure',
+})
 
 export default function RiskDisclosure() {
   return (
-    <LegalPage
-      title="Risk Disclosure"
-      description="Bright Kapitune Risk Disclosure - trading financial markets carries substantial risk and is not suitable for every investor."
-      updated="1 August 2026"
-    >
+    <LegalPage title="Risk Disclosure" updated="1 August 2026">
       <LegalSection heading="General Risk Warning">
         <p>
           Trading in financial markets - including cryptocurrencies, equities, forex, commodities,

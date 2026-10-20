@@ -1,13 +1,14 @@
-import { Link } from 'react-router-dom'
-import Icon from '../components/Icon'
-import useMeta from '../hooks/useMeta'
-import {
-  ABOUT_FEATURES,
-  STATS,
-  STORY_STEPS,
-  SITE_URL,
-  VALUES,
-} from '../data/content'
+import Link from 'next/link'
+import Icon from '../../components/Icon'
+import { pageMeta } from '../../lib/seo'
+import { ABOUT_FEATURES, STATS, STORY_STEPS, VALUES } from '../../data/content'
+
+export const metadata = pageMeta({
+  title: 'About Bright Kapitune - AI-Powered Crypto Trading Platform',
+  description:
+    'About Bright Kapitune - our story, purpose, team and the transparency and controls behind the platform.',
+  path: '/about-us',
+})
 
 const HERO_STATS = [
   { value: '98+', label: 'Market availability' },
@@ -16,13 +17,6 @@ const HERO_STATS = [
 ]
 
 export default function AboutUs() {
-  useMeta({
-    title: 'About Bright Kapitune - AI-Powered Crypto Trading Platform',
-    description:
-      'About Bright Kapitune - our story, purpose, team and the transparency and controls behind the platform.',
-    canonical: `${SITE_URL}/about-us`,
-  })
-
   return (
     <main>
       {/* Hero - split: text left, frosted stats panel right */}
@@ -45,10 +39,10 @@ export default function AboutUs() {
               efficiently and invest with greater transparency.
             </p>
             <div style={{ display: 'flex', gap: 14, marginTop: 32, flexWrap: 'wrap' }}>
-              <Link to="/#register" className="btn btn--lime">
+              <a href="/#register" className="btn btn--lime">
                 Register
-              </Link>
-              <Link to="/contact-us" className="btn btn--ghost">
+              </a>
+              <Link href="/contact-us" className="btn btn--ghost">
                 Contact us
               </Link>
             </div>
@@ -168,7 +162,6 @@ export default function AboutUs() {
           </p>
         </div>
       </section>
-
     </main>
   )
 }

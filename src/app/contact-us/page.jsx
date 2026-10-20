@@ -1,16 +1,16 @@
-import Icon from '../components/Icon'
-import RegistrationForm from '../components/RegistrationForm'
-import useMeta from '../hooks/useMeta'
-import { CONTACT_EMAIL, SITE_URL } from '../data/content'
+import Icon from '../../components/Icon'
+import RegistrationForm from '../../components/RegistrationForm'
+import { pageMeta } from '../../lib/seo'
+import { CONTACT_EMAIL } from '../../data/content'
+
+export const metadata = pageMeta({
+  title: 'Contact Bright Kapitune - Get Support & Assistance',
+  description:
+    'Contact Bright Kapitune - questions about the platform, technical assistance or collaborations. Our team is ready to help.',
+  path: '/contact-us',
+})
 
 export default function Contact() {
-  useMeta({
-    title: 'Contact Bright Kapitune - Get Support & Assistance',
-    canonical: `${SITE_URL}/contact-us`,
-    description:
-      'Contact Bright Kapitune - questions about the platform, technical assistance or collaborations. Our team is ready to help.',
-  })
-
   return (
     <main className="contact">
       <div className="container contact__inner">

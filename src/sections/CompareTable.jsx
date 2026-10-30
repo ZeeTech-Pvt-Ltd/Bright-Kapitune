@@ -2,7 +2,7 @@ import { COMPARE_ROWS } from '../data/content'
 
 export default function CompareTable() {
   return (
-    <section className="section compare">
+    <section className="section section--tight compare">
       <div className="container">
         <div className="section-head" data-reveal>
           <span className="eyebrow">The difference</span>

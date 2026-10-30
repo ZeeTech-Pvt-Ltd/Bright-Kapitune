@@ -4,10 +4,10 @@ import Link from 'next/link'
 import { usePathname, useRouter } from 'next/navigation'
 import Icon from '../components/Icon'
 
-// Closing blue band with a lime action button, visually distinct from
-// the slate footer below. The button sends users to the registration
-// form at the top of the home page (scrolling smoothly when we are
-// already there).
+// Closing soft-blue (#DBEAFE) band with a solid blue action button,
+// visually distinct from the slate footer below. The button sends users
+// to the registration form at the top of the home page (scrolling
+// smoothly when we are already there).
 export default function FinalCta() {
   const pathname = usePathname()
   const router = useRouter()
@@ -34,7 +34,7 @@ export default function FinalCta() {
         </p>
 
         <div className="cta-final-band__actions">
-          <a href="/#register" onClick={handleCta} className="btn btn--lime">
+          <a href="/#register" onClick={handleCta} className="btn btn--blue">
             Create My Free Account
           </a>
           <Link href="/contact-us" className="cta-final-band__link">

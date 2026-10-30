@@ -60,11 +60,10 @@ export default function Footer() {
         </div>
 
         <p className="site-footer__risk">
-          Risk Disclosure: Trading financial markets carries substantial risk and is not suitable
-          for everyone. Prices can fall as quickly as they rise, and you may lose some or all of
-          your invested capital. Past performance does not guarantee future results. This website
-          provides general information only and does not constitute financial advice. Always do
-          your own research and consider seeking independent professional advice before trading.
+          Risk Disclosure: Trading crypto, forex, stocks and commodities involves significant risk
+          and may not suit every investor. You may lose some or all of your capital. Past
+          performance does not guarantee future results. Only trade with money you can afford to
+          lose.
         </p>
 
         <div className="site-footer__bottom">

@@ -2,7 +2,7 @@ import LegalPage, { LegalSection, ContactNote } from '../../components/LegalPage
 import { pageMeta } from '../../lib/seo'
 
 export const metadata = pageMeta({
-  title: 'Risk Disclosure - Bright Kapitune',
+  title: 'Risk Disclosure - Bright Kapitune Trading Platform Australia',
   description:
     'Bright Kapitune Risk Disclosure - trading financial markets carries substantial risk and is not suitable for every investor.',
   path: '/risk-disclosure',

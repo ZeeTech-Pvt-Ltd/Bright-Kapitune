@@ -1,7 +1,7 @@
 import Link from 'next/link'
 
 export const metadata = {
-  title: 'Page Not Found - Bright Kapitune',
+  title: 'Page Not Found - Bright Kapitune Trading Platform Australia',
   description: "The page you're looking for doesn't exist. Head back to the Bright Kapitune homepage.",
 }
 

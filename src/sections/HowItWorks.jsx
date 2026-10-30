@@ -1,7 +1,9 @@
 import Icon from '../components/Icon'
 import { STEPS } from '../data/content'
 
-export default function HowItWorks() {
+// `cta` renders a call-to-action under the steps (homepage links back
+// to the registration form at the top of the page).
+export default function HowItWorks({ cta }) {
   return (
     <section className="steps-band has-coins" id="how-it-works">
       <img className="coin coin--xrp" src="/assets/img/coins/xrp-l-320.png" alt="" loading="lazy" decoding="async" fetchPriority="low" />
@@ -31,6 +33,14 @@ export default function HowItWorks() {
             </div>
           ))}
         </div>
+
+        {cta && (
+          <div className="steps-band__cta" data-reveal>
+            <a href="#register" className="btn btn--lime">
+              {cta}
+            </a>
+          </div>
+        )}
       </div>
     </section>
   )

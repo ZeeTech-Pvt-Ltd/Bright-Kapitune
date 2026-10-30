@@ -5,7 +5,7 @@ import Security from '../../sections/Security'
 import FinalCta from '../../sections/FinalCta'
 
 export const metadata = pageMeta({
-  title: 'Bright Kapitune Features - Tools Built for Australian Traders',
+  title: 'Bright Kapitune Features - AI Tools for Australian Traders',
   description:
     'Bright Kapitune features - AI-powered market analysis, fast order execution, bank-grade security and a dashboard designed for everyday traders.',
   path: '/features',

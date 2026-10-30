@@ -213,11 +213,11 @@ export default function RegistrationForm({ idPrefix = 'reg', title, subtitle }) 
         )}
 
         <button className="btn btn--lime btn--block" type="submit" disabled={status === STATUS.loading}>
-          {status === STATUS.loading ? 'Submitting…' : 'Open an account'}
+          {status === STATUS.loading ? 'Submitting…' : 'Get Started Free'}
         </button>
         <p className="form-trust">
           <Icon name="lock" size={13} strokeWidth={2.2} />
-          Your data is protected with 256-bit SSL encryption
+          Free sign-up · Takes under 2 minutes · Secure registration
         </p>
       </form>
     </div>

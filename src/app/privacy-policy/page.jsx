@@ -2,7 +2,7 @@ import LegalPage, { LegalSection, ContactNote } from '../../components/LegalPage
 import { pageMeta } from '../../lib/seo'
 
 export const metadata = pageMeta({
-  title: 'Privacy Policy - Bright Kapitune',
+  title: 'Privacy Policy - Bright Kapitune Trading Platform Australia',
   description:
     'Read the Bright Kapitune Privacy Policy - how we collect, use and protect your personal information.',
   path: '/privacy-policy',

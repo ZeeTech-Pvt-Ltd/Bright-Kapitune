@@ -8,7 +8,7 @@ import Faq from '../../sections/Faq'
 import FinalCta from '../../sections/FinalCta'
 
 export const metadata = pageMeta({
-  title: 'How It Works - Bright Kapitune',
+  title: 'How Bright Kapitune Works - Sign Up, Deposit & Start Trading',
   description:
     'How Bright Kapitune works - open a free account, deposit funds and start trading crypto, forex and more in three simple steps.',
   path: '/how-it-works',

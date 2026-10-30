@@ -117,65 +117,179 @@ export const SECURITY_FEATURES = [
 
 export const STEPS = [
   {
-    title: 'Sign Up',
-    text: 'Create your free account in minutes - just your name, email and phone number.',
+    title: 'Sign Up Free',
+    text: 'Fill in the short form with your name, email and phone number. It takes less than two minutes.',
     points: [
-      'Enter your name, email and phone number',
-      'Verify your details in moments',
+      'Just your name, email and phone number',
+      'Takes less than two minutes',
       'No registration fee - your account is free',
     ],
   },
   {
-    title: 'Deposit Funds',
-    text: 'Top up with 347 A$ or more using a card, bank transfer or e-wallet.',
+    title: 'Fund Your Account',
+    text: 'Add from 347 A$ using a payment method that suits you. Your account manager can walk you through it.',
     points: [
+      'Start from just 347 A$',
       'Pay by card, bank transfer, e-wallet or PayPal',
-      'Start with a minimum deposit of just 347 A$',
-      'Every fee shown clearly before you confirm',
+      'Your account manager can walk you through it',
     ],
   },
   {
-    title: 'Start Trading',
-    text: 'Trade BTC, SOL, USDT and more - manually or on autopilot.',
+    title: 'Trade with AI Support',
+    text: 'The AI watches the markets and flags opportunities. You review them, set your limits, and decide when to trade.',
     points: [
-      'Trade crypto, forex, shares, commodities and more',
-      'Go manual, or switch on the automated analysis engine',
-      'Track your balance and history from one dashboard',
+      'The AI scans the markets around the clock',
+      'You review each trade idea and set your limits',
+      'Nothing is traded without your settings',
     ],
   },
+]
+
+// Trust strip under the hero (homepage structure item 2).
+export const TRUST_STRIP = [
+  {
+    title: 'Start from 347 A$',
+    text: 'a small, sensible first step',
+    icon: 'coins',
+  },
+  {
+    title: 'No app needed',
+    text: 'works in any web browser',
+    icon: 'bolt',
+  },
+  {
+    title: 'Bank-level encryption',
+    text: 'your details stay protected',
+    icon: 'lock',
+  },
+  {
+    title: 'Support on Aussie hours',
+    text: 'real help when you need it',
+    icon: 'headset',
+  },
+]
+
+// Key feature cards (homepage structure item 6).
+export const KEY_FEATURES = [
+  {
+    title: 'AI Market Scanning',
+    text: 'The AI checks thousands of price movements every minute, day and night.',
+    icon: 'chip',
+  },
+  {
+    title: 'Clear Trade Signals',
+    text: 'Simple buy or sell ideas, with the reason behind each one.',
+    icon: 'eye',
+  },
+  {
+    title: 'Risk Controls',
+    text: 'Set stop-loss and take-profit levels before you trade.',
+    icon: 'key',
+  },
+  {
+    title: 'Real-Time Alerts',
+    text: 'Get notified when a market you follow starts to move.',
+    icon: 'clock',
+  },
+  {
+    title: 'Easy Dashboard',
+    text: 'See your balance, open trades and results on one screen.',
+    icon: 'gauge',
+  },
+  {
+    title: 'Works on Any Device',
+    text: 'Use it on your laptop, tablet or phone browser.',
+    icon: 'bolt',
+  },
+]
+
+// Safety points (homepage structure item 9).
+export const SAFE_POINTS = [
+  {
+    title: 'Encrypted data',
+    text: 'All personal details are protected with SSL encryption.',
+    icon: 'lock',
+  },
+  {
+    title: 'Secure accounts',
+    text: 'Login protection keeps your account private.',
+    icon: 'key',
+  },
+  {
+    title: 'Clear terms',
+    text: 'No hidden fees. Our terms, privacy policy and risk disclosure are easy to find.',
+    icon: 'receipt',
+  },
+  {
+    title: 'You stay in control',
+    text: 'The AI suggests. You decide. Nothing is traded without your settings.',
+    icon: 'shield',
+  },
+]
+
+// Why Australians choose the platform (homepage structure item 7).
+export const WHY_AUSTRALIANS = [
+  {
+    title: 'Aussie time zones',
+    text: 'Alerts and support fit your day, from Perth to Brisbane.',
+    icon: 'clock',
+  },
+  {
+    title: 'AUD-friendly',
+    text: 'See your account in Australian dollars and fund it with ease.',
+    icon: 'coins',
+  },
+  {
+    title: 'Local focus',
+    text: 'Market coverage includes the ASX and AUD currency pairs.',
+    icon: 'receipt',
+  },
+  {
+    title: 'Plain English',
+    text: 'No heavy jargon. Every trade idea is easy to understand.',
+    icon: 'smile',
+  },
+]
+
+// Manual trading vs Bright Kapitune (homepage structure item 8).
+export const COMPARE_ROWS = [
+  { label: 'Market watching', manual: 'A few hours a day', ai: '24/7' },
+  {
+    label: 'Markets covered',
+    manual: 'Usually one or two',
+    ai: 'Crypto, forex, stocks, commodities',
+  },
+  { label: 'Decision basis', manual: 'Gut feel and news', ai: 'Price data and patterns' },
+  { label: 'Emotional bias', manual: 'High', ai: 'Reduced' },
+  { label: 'Time needed', manual: 'Hours of research', ai: 'Minutes to review' },
+  { label: 'Final decision', manual: 'You', ai: 'Still you' },
 ]
 
 // Markets available on the platform, used by the How It Works page.
 export const MARKETS = [
   {
-    title: 'Cryptocurrencies',
-    text: 'Trade BTC, ETH, SOL, USDT and more - manually or on autopilot, around the clock.',
+    title: 'Crypto',
+    text: 'Trade Bitcoin, Ethereum and other popular coins - the AI tracks the fast price swings that are hard to follow by hand.',
     icon: 'chip',
+    examples: ['BTC', 'ETH', 'SOL'],
   },
   {
     title: 'Forex',
-    text: 'Access major and minor currency pairs with clear, transparent pricing.',
+    text: 'Follow major pairs like AUD/USD and EUR/USD. Trade ideas are timed with the Sydney, London and New York sessions in mind.',
     icon: 'gauge',
+    examples: ['AUD/USD', 'EUR/USD', 'GBP/USD'],
   },
   {
-    title: 'Shares',
-    text: 'Trade shares in companies you know, all from a single account.',
+    title: 'Stocks',
+    text: 'Keep an eye on big names from Australia and overseas - the AI flags trend changes and unusual volume.',
     icon: 'receipt',
+    examples: ['ASX', 'Aussie names', 'Global names'],
   },
   {
     title: 'Commodities',
-    text: 'Broaden your portfolio with energy, agriculture and industrial commodities.',
+    text: 'Gold, oil and other raw materials often move with world news. The AI helps you spot those shifts early.',
     icon: 'bolt',
-  },
-  {
-    title: 'Precious Metals',
-    text: 'Trade gold, silver and other metals as an opportunity or a hedge.',
-    icon: 'coins',
-  },
-  {
-    title: 'CFDs',
-    text: 'Go long or short with CFDs across the markets above - risks shown upfront.',
-    icon: 'arrowRight',
+    examples: ['Gold', 'Oil', 'Gas'],
   },
 ]
 
@@ -263,28 +377,36 @@ export const BAND_QUOTES = [
 
 export const FAQS = [
   {
-    q: 'How do I get started with Bright Kapitune?',
-    a: 'Open a free account, add funds, and you can begin right away. Trade on your own terms, or switch on the built-in analysis engine that scans the markets and acts on the settings you choose. Your money and your settings stay under your control at all times.',
+    q: 'Is Bright Kapitune available in Australia?',
+    a: 'Yes. Bright Kapitune is built for Australian users and works in every state and territory.',
   },
   {
-    q: 'How is my money protected?',
-    a: 'Several safeguards work together: 256-bit SSL encryption on every connection, 98% of funds held in offline cold storage, two-step login verification, and round-the-clock monitoring for unusual activity. Passwords are stored using one-way hashing, so nobody - including our staff - can ever read them.',
+    q: 'What is the minimum deposit?',
+    a: 'You can start trading from just 347 A$.',
   },
   {
-    q: 'How quickly can I withdraw my funds?',
-    a: 'You can request a withdrawal from your dashboard at any time. Most requests are completed within 24–48 hours, and funds are returned to the payment method you originally used where possible.',
+    q: 'Is there a Bright Kapitune app?',
+    a: 'No download is needed. Bright Kapitune runs in your web browser on any phone, tablet or computer.',
   },
   {
-    q: 'Are there any hidden fees?',
-    a: 'No. Any cost attached to a transaction is shown to you clearly before you confirm it. If a fee applies, you will see the exact amount first - every single time.',
+    q: 'Do I need trading experience?',
+    a: 'No. Trade ideas come with simple explanations, and an account manager can help you get started.',
   },
   {
-    q: 'Do I need any experience to use the platform?',
-    a: 'None at all. The interface was designed for first-timers, the minimum deposit is just 347 A$, and the analysis engine plus built-in guides help you build confidence step by step.',
+    q: 'Is Bright Kapitune legit?',
+    a: 'Bright Kapitune is a real platform with secure sign-up, clear terms and a full risk disclosure. As with any trading, your capital is at risk.',
   },
   {
-    q: 'Which markets can I access?',
-    a: 'You can trade across a broad range of instruments from one account, including shares, currencies (forex), commodities, precious metals, CFDs and cryptocurrencies.',
+    q: 'How does the AI choose trades?',
+    a: 'It studies price history, trends and market volume to spot patterns, then shows you trade ideas you can accept or ignore.',
+  },
+  {
+    q: 'Can I withdraw my money?',
+    a: 'Yes. You can request a withdrawal from your dashboard at any time - most are completed within 24-48 hours.',
+  },
+  {
+    q: 'How long does sign-up take?',
+    a: 'Less than two minutes. Just fill in the form at the top of this page.',
   },
 ]
 

@@ -4,7 +4,7 @@ import { pageMeta } from '../../lib/seo'
 import { CONTACT_EMAIL } from '../../data/content'
 
 export const metadata = pageMeta({
-  title: 'Contact Bright Kapitune - Get Support & Assistance',
+  title: 'Contact Bright Kapitune - Get Support & Assistance Anytime',
   description:
     'Contact Bright Kapitune - questions about the platform, technical assistance or collaborations. Our team is ready to help.',
   path: '/contact-us',

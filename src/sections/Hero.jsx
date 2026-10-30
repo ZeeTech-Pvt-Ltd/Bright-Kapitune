@@ -17,16 +17,16 @@ export default function Hero() {
         <div>
           <span className="hero__eyebrow">
             <span className="dot" aria-hidden="true" />
-            Australia&apos;s home for crypto trading
+            Made for Australia
           </span>
 
           <h1>
-            Bright Kapitune <span className="accent">Platform</span>
+            The AI Trading Platform <span className="accent">Australia Can Count On</span>
           </h1>
 
           <p className="hero__sub">
-            A modern trading platform designed for Australians - bringing together crypto and
-            traditional markets with tools that make trading feel simple.
+            Bright Kapitune is a straightforward AI trading platform for Australians. It studies
+            the markets, highlights opportunities, and leaves the final call to you.
           </p>
 
           <div className="hero__points">

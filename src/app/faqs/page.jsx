@@ -4,7 +4,7 @@ import { pageMeta } from '../../lib/seo'
 import { FAQS_PAGE, FAQ_QUICK_CARDS } from '../../data/content'
 
 export const metadata = pageMeta({
-  title: 'Bright Kapitune FAQs - Fees, Security & How It Works',
+  title: 'Bright Kapitune FAQs - Fees, Security, Withdrawals & More',
   description:
     'Bright Kapitune frequently asked questions - how the platform works, security, withdrawals, fees, and more.',
   path: '/faqs',

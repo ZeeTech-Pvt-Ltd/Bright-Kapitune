@@ -4,7 +4,7 @@ import Testimonials from '../../sections/Testimonials'
 import FinalCta from '../../sections/FinalCta'
 
 export const metadata = pageMeta({
-  title: 'Bright Kapitune Reviews - Ratings & Testimonials',
+  title: 'Bright Kapitune Reviews - Verified Ratings & Testimonials',
   description:
     'Bright Kapitune reviews - verified member feedback, ratings and success stories from traders across Australia.',
   path: '/reviews',

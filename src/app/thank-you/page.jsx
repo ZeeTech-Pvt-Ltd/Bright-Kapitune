@@ -3,7 +3,7 @@ import Icon from '../../components/Icon'
 import { pageMeta } from '../../lib/seo'
 
 export const metadata = pageMeta({
-  title: 'Thank You for Registering - Bright Kapitune',
+  title: 'Thank You for Registering with Bright Kapitune - Start Now',
   description: 'Thank you for registering with Bright Kapitune. Our team will contact you shortly.',
   path: '/thank-you',
 })

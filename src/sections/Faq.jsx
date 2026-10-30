@@ -2,9 +2,23 @@ import Link from 'next/link'
 import FaqList from '../components/FaqList'
 import { FAQS } from '../data/content'
 
+const faqSchema = {
+  '@context': 'https://schema.org',
+  '@type': 'FAQPage',
+  mainEntity: FAQS.map(({ q, a }) => ({
+    '@type': 'Question',
+    name: q,
+    acceptedAnswer: { '@type': 'Answer', text: a },
+  })),
+}
+
 export default function Faq() {
   return (
     <section className="section" id="faq">
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }}
+      />
       <div className="container">
         <div className="section-head" data-reveal>
           <span className="eyebrow">FAQ</span>

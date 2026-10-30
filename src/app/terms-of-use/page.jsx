@@ -2,7 +2,7 @@ import LegalPage, { LegalSection, ContactNote } from '../../components/LegalPage
 import { pageMeta } from '../../lib/seo'
 
 export const metadata = pageMeta({
-  title: 'Terms of Use - Bright Kapitune',
+  title: 'Terms of Use - Bright Kapitune Trading Platform Australia',
   description:
     'Bright Kapitune Terms of Use - the rules that govern your use of our website and trading platform.',
   path: '/terms-of-use',

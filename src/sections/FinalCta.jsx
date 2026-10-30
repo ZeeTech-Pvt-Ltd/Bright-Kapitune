@@ -1,43 +1,51 @@
+'use client'
+
+import Link from 'next/link'
+import { usePathname, useRouter } from 'next/navigation'
 import Icon from '../components/Icon'
-import RegistrationForm from '../components/RegistrationForm'
 
-const POINTS = ['Free account in minutes', 'No experience needed']
-
-// Closing conversion section on the slate background, above the footer.
-// Mirrors the hero's split layout for a bookend feel.
+// Closing blue band with a lime action button, visually distinct from
+// the slate footer below. The button sends users to the registration
+// form at the top of the home page (scrolling smoothly when we are
+// already there).
 export default function FinalCta() {
+  const pathname = usePathname()
+  const router = useRouter()
+
+  const handleCta = (e) => {
+    e.preventDefault()
+    if (pathname === '/') {
+      document.getElementById('register')?.scrollIntoView({ behavior: 'smooth' })
+    } else {
+      router.push('/')
+      setTimeout(() => document.getElementById('register')?.scrollIntoView({ behavior: 'smooth' }), 150)
+    }
+  }
+
   return (
-    <section
-      className="hero cta-final"
-      id="register-final"
-      style={{ borderRadius: 'var(--radius-section) 0 0 0' }}
-    >
-      <div className="hero__glow hero__glow--1" aria-hidden="true" />
-      <span className="cta-final__ghost" aria-hidden="true">
-        09
-      </span>
+    <section className="cta-final-band" id="register-final">
+      <div className="container cta-final-band__inner" data-reveal>
+        <h2>
+          Ready to try a smarter <span className="accent">AI trading platform in Australia?</span>
+        </h2>
+        <p>
+          Join Bright Kapitune today. Sign up for free, start from 347 A$, and let the AI do the
+          heavy market research for you.
+        </p>
 
-      <div className="container hero__inner cta-final__inner" data-reveal>
-        <div>
-          <h2 className="cta-final__heading">
-            Ready to start your <span className="accent">trading journey?</span>
-          </h2>
-          <p className="hero__sub">
-            Join 4m+ members already trading with Bright Kapitune. Your free account takes minutes
-            to open - no experience needed.
-          </p>
-
-          <div className="hero__points cta-final__points">
-            {POINTS.map((point) => (
-              <span className="hero__point" key={point}>
-                <Icon name="check" size={16} strokeWidth={2.5} />
-                {point}
-              </span>
-            ))}
-          </div>
+        <div className="cta-final-band__actions">
+          <a href="/#register" onClick={handleCta} className="btn btn--lime">
+            Create My Free Account
+          </a>
+          <Link href="/contact-us" className="cta-final-band__link">
+            Talk to our team
+          </Link>
         </div>
 
-        <RegistrationForm idPrefix="final" title="Create your free account" />
+        <p className="cta-final-band__trust">
+          <Icon name="check" size={14} strokeWidth={2.5} />
+          Free sign-up · Takes under 2 minutes · Secure registration
+        </p>
       </div>
     </section>
   )

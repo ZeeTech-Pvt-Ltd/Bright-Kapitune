@@ -25,11 +25,11 @@ const manrope = Manrope({
 export const metadata = {
   metadataBase: new URL(SITE_URL),
   title: {
-    default: 'Bright Kapitune - Official Crypto Trading Platform Australia',
+    default: 'Bright Kapitune | AI Trading Platform Australia from 347 A$',
     template: '%s',
   },
   description:
-    "Bright Kapitune - Australia's online trading platform. Trade crypto, forex, equities and more with AI-powered analysis and 24/7 access.",
+    'Bright Kapitune is a browser-based AI trading platform for Australians. Trade crypto, forex, stocks and commodities with AI market insights. Start from 347 A$.',
   keywords: [
     'Bright Kapitune',
     'Bright Kapitune platform',
@@ -49,17 +49,17 @@ export const metadata = {
     type: 'website',
     siteName: BRAND,
     locale: 'en_AU',
-    title: 'Bright Kapitune - Official Crypto Trading Platform Australia',
+    title: 'Bright Kapitune | AI Trading Platform Australia from 347 A$',
     description:
-      "Bright Kapitune - Australia's online trading platform. Trade crypto, forex, equities and more with AI-powered analysis and 24/7 access.",
+      'Bright Kapitune is a browser-based AI trading platform for Australians. Trade crypto, forex, stocks and commodities with AI market insights. Start from 347 A$.',
     url: `${SITE_URL}/`,
     images: [{ url: `${SITE_URL}/og-image.png`, width: 1200, height: 630 }],
   },
   twitter: {
     card: 'summary_large_image',
-    title: 'Bright Kapitune - Official Crypto Trading Platform Australia',
+    title: 'Bright Kapitune | AI Trading Platform Australia from 347 A$',
     description:
-      "Bright Kapitune - Australia's online trading platform. Trade crypto, forex, equities and more with AI-powered analysis and 24/7 access.",
+      'Bright Kapitune is a browser-based AI trading platform for Australians. Trade crypto, forex, stocks and commodities with AI market insights. Start from 347 A$.',
     images: [`${SITE_URL}/og-image.png`],
   },
 }
@@ -81,7 +81,7 @@ const ORGANIZATION_SCHEMA = {
       email: 'support@bright-kapitune-au.com',
       areaServed: 'AU',
       description:
-        "Bright Kapitune - Australia's online trading platform. Trade crypto, forex, equities and more with AI-powered analysis and 24/7 access.",
+        'Bright Kapitune is a browser-based AI trading platform for Australians. Trade crypto, forex, stocks and commodities with AI market insights. Start from 347 A$.',
     },
     {
       '@type': 'WebSite',

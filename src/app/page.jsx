@@ -1,20 +1,22 @@
 import { pageMeta } from '../lib/seo'
 import Hero from '../sections/Hero'
-import Stats from '../sections/Stats'
-import TrustUs from '../sections/TrustUs'
-import ReviewsBand from '../sections/ReviewsBand'
-import About from '../sections/About'
-import Benefits from '../sections/Benefits'
-import Security from '../sections/Security'
+import TrustStrip from '../sections/TrustStrip'
+import WhatIs from '../sections/WhatIs'
 import HowItWorks from '../sections/HowItWorks'
+import Markets from '../sections/Markets'
+import KeyFeatures from '../sections/KeyFeatures'
+import WhyAustralians from '../sections/WhyAustralians'
+import CompareTable from '../sections/CompareTable'
+import SafeSection from '../sections/SafeSection'
+import ReviewsBand from '../sections/ReviewsBand'
 import Testimonials from '../sections/Testimonials'
 import Faq from '../sections/Faq'
 import FinalCta from '../sections/FinalCta'
 
 export const metadata = pageMeta({
-  title: 'Bright Kapitune - Official Crypto Trading Platform Australia',
+  title: 'Bright Kapitune | AI Trading Platform Australia from 347 A$',
   description:
-    "Bright Kapitune - Australia's online trading platform. Trade crypto, forex, equities and more with AI-powered analysis and 24/7 access.",
+    'Bright Kapitune is a browser-based AI trading platform for Australians. Trade crypto, forex, stocks and commodities with AI market insights. Start from 347 A$.',
   path: '/',
 })
 
@@ -22,14 +24,16 @@ export default function Home() {
   return (
     <>
       <Hero />
-      <Stats />
-      <HowItWorks />
-      <About />
-      <Benefits />
+      <TrustStrip />
+      <WhatIs />
+      <HowItWorks cta="Start Step 1 Now" />
+      <Markets />
+      <KeyFeatures />
+      <WhyAustralians />
+      <CompareTable />
+      <SafeSection />
       <ReviewsBand />
-      <TrustUs />
       <Testimonials />
-      <Security />
       <Faq />
       <FinalCta />
     </>
